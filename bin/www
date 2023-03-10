@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('db-cv:server');
+var debug = require('debug')('nodejscv:server');
 var http = require('http');
 
 /**
