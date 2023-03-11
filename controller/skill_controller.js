@@ -1,14 +1,10 @@
-const Profile = require('../models/profile');
 const Skill = require('../models/skill');
 
 async function index(req, res, next) {
-  const profiles = await Profile.find({});
   const skills = await Skill.find({});
-
-  res.render('index', {
-    title: 'My CV of group Starbuck',
+  res.render('components/skills', {
+    title: 'My CV of group Starbuck | Skill',
     page: req.url,
-    profile: profiles[0],
     skill: skills[0],
   });
 }
